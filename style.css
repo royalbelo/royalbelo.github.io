@@ -1,0 +1,254 @@
+#main-header{
+    background-color: #34495e;
+    height: 16vh;
+    grid-area: header;
+    margin: 0px;
+    text-align: center;
+}
+
+#logo{
+    color: #bdc3c7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 
+    2px 2px 0px #333333,  /* Bottom-right shadow */
+    -2px 2px 0px #333333, /* Bottom-left shadow */
+    2px -2px 0px #333333, /* Top-right shadow */
+    -2px -2px 0px #333333;    /* Bottom-left shadow */
+    margin: 0px;
+}
+
+#nav-ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.navbutton{
+    color: #bdc3c7;
+    text-decoration: none;
+    padding-right: 3vw;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-inline: 2vw;
+    margin-bottom: 3v;
+    border-right: medium solid #bdc3c7;
+    display: flex;
+    text-shadow: 
+    1px 2px 0px #333333,  /* Bottom-right shadow */
+    -2px 2px 0px #333333, /* Bottom-left shadow */
+    1px -1px 0px #333333, /* Top-right shadow */
+    -1px -1px 0px #333333;    /* Top-left shadow */
+}
+
+body{
+    background-color: #f7e7ce;
+    color: #34495e;
+    margin: 0px;
+    grid-area: main;
+}
+
+div > article > header{
+    margin: 0 auto;
+    text-align: center;
+}
+
+div > article > main{
+   margin: 0 auto;
+   text-align: center;
+}
+
+div > article > footer{
+   margin: 0 auto;
+   text-align: center;
+}
+
+/* Author profile (aside) styling */
+#author-profile{
+    background-color: #bdc3c7;
+    color: #34495e; 
+    margin: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid medium #34495e;
+    border-radius: 5%;
+    flex: 0 0 25%; /* Fixed width for aside (25% of the width) */
+    margin-right: 20px; /* Optional: add spacing between aside and articles */
+    flex: 0 0 25%; /* Fixed width for aside (25% of the width) */
+    margin-right: 20px; /* Optional: add spacing between aside and articles */
+    grid-area: profile;
+}
+
+#author-profile header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+#author-profile main{
+    font-style: oblique;
+}
+
+#author-profile > main > p{
+    font-style: italic;
+}
+
+
+
+main > article{
+    grid-area: main_content;
+}
+
+section > article{
+    margin-bottom: 30px;
+}
+
+.profilebutton{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #34495e;
+    color: #f7e7ce
+    
+}
+
+form{
+    text-align: center;
+    font-weight: 900;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+body > footer{
+    background-color: #34495e;
+    padding: 1vw 1vh;
+    margin-right: 1vw 1vh;
+    display: flex;
+    color: #bdc3c7;
+    text-shadow: 
+    2px 2px 0px #333333,  /* Bottom-right shadow */
+    -2px 2px 0px #333333, /* Bottom-left shadow */
+    2px -2px 0px #333333, /* Top-right shadow */
+    -2px -2px 0px #333333;    /* Top-left shadow */
+
+
+    ;
+}
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li{
+    margin-left: 12px;
+}
+
+#footer-ul > div > li > a{
+    margin-left: 256px;
+    color: #bdc3c7;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: justify;
+    text-shadow: 
+    1px 1px 0px #333333,  /* Bottom-right shadow */
+    -1px 1px 0px #333333, /* Bottom-left shadow */
+    1px -1px 0px #333333, /* Top-right shadow */
+    -1px -1px 0px #333333;    /* Top-left shadow */
+}
+
+#copyright{
+    margin: 32px;
+}
+
+/* Flexbox layout for the content wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align aside and articles at the top */
+    gap: 20px; /* Add space between aside and articles */
+    padding: 20px;
+}
+
+
+/* Articles section */
+.articles {
+    flex: 1; /* Articles take up the remaining space */
+    max-width: 40%; /* Optional: Ensure articles don't get too wide */
+}
+
+/* Style individual articles */
+.articles article {
+    margin-bottom: 40px; /* Spacing between articles */
+    text-align: center; /* Center-align the text and content */
+    border: 1px solid #ccc; /* Optional: Border for each article */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for articles */
+}
+
+/* Center the images within each article */
+.articles article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensure images are responsive */
+    border: thin solid #34495e;
+    border-radius: 50%;
+}
+
+.articles article header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+.articles article main{
+    font-style: oblique;
+}
+
+.articles article footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#poem1{
+    background-color: #bdc3c7;
+    color: #34495e;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10%;
+
+
+}
+#poem2{
+    background-color: #bdc3c7;
+    color: #34495e;
+    padding-left: 00px;
+    padding-right: 0px;
+    border-radius: 10%;
+}
+
+#poem3{
+    background-color: #bdc3c7;
+    color: #34495e;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10%;
+}
+
+h5{
+    margin-bottom: 10px;
+}
+
+footer > h2{
+    margin-left: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mailing-list{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
